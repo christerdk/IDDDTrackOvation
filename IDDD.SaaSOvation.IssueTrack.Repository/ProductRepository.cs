@@ -11,7 +11,7 @@ namespace IDDD.SaaSOvation.IssueTrack.Repository
     {
         public Product Get(ProductId productId)
         {
-            return new Product(productId, new TenantId(Guid.NewGuid()));
+            return new Product(new TenantId(Guid.NewGuid()), productId, String.Empty, String.Empty);
         }
     }
 }

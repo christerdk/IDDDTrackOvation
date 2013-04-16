@@ -12,10 +12,16 @@ namespace IDDD.SaaSOvation.IssueTrack.Domain.Model
         public ProductId Id { get; protected set; }
         public TenantId TenantId { get; protected set; }
 
-        public Product(ProductId productId, TenantId tenantId)
+        public string Name { get; protected set; }
+        public string Description { get; protected set; }
+
+
+        public Product(TenantId tenantId, ProductId productId, string name, string description)
         {
             Id = productId;
             TenantId = tenantId;
+            this.Name = name;
+            this.Description = description;
         }
 
         public List<IssueId> MyIssues = new List<IssueId>();

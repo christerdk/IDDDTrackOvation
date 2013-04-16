@@ -14,5 +14,19 @@ namespace IDDD.SaaSOvation.IssueTrack.Domain.Model
         {
             Id = id;
         }
+
+        public override bool Equals(object obj)
+        {
+            var theObj = obj as TenantId;
+            if (theObj == null)
+                return false;
+
+            return this.Id.Equals(theObj.Id);
+        }
+
+        public override int GetHashCode()
+        {
+            return Id.GetHashCode();
+        }
     }
 }
