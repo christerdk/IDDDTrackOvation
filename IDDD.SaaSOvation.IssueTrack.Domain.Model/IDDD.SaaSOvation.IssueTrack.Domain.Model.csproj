@@ -40,7 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assignee.cs" />
-    <Compile Include="Class1.cs" />
+    <Compile Include="TenantId.cs" />
     <Compile Include="IssueId.cs" />
     <Compile Include="ProductId.cs" />
     <Compile Include="Issue.cs" />
