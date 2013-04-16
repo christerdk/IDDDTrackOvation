@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IDDD.SaaSOvation.IssueTrack.Domain.Model.Id
+namespace IDDD.SaaSOvation.IssueTrack.Domain.Model
 {
-    public class ProductId
+    public class TenantId
     {
-        public Guid Id { get; private set; }
+        public Guid Id { get; protected set; }
 
-        public ProductId(Guid id)
+        public TenantId(Guid id)
         {
             Id = id;
         }

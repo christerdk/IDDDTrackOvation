@@ -47,8 +47,8 @@
       <Project>{bfeb58bb-1bef-4337-9a6a-fb5bdeec5671}</Project>
       <Name>IDDD.SaaSOvation.IssueTrack.Domain.Model</Name>
     </ProjectReference>
-    <ProjectReference Include="..\IDDD.SaaSOvation.IssueTrack.Domain.Model\IDDD.SaaSOvation.IssueTrack.Repository\IDDD.SaaSOvation.IssueTrack.Repository.csproj">
-      <Project>{15C1B5CC-77A5-4012-97A0-9E039B18BB29}</Project>
+    <ProjectReference Include="..\IDDD.SaaSOvation.IssueTrack.Repository\IDDD.SaaSOvation.IssueTrack.Repository.csproj">
+      <Project>{15c1b5cc-77a5-4012-97a0-9e039b18bb29}</Project>
       <Name>IDDD.SaaSOvation.IssueTrack.Repository</Name>
     </ProjectReference>
   </ItemGroup>

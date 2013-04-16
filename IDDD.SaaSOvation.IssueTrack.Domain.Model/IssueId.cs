@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IDDD.SaaSOvation.IssueTrack.Domain.Model.Id
+namespace IDDD.SaaSOvation.IssueTrack.Domain.Model
 {
     public class IssueId
     {

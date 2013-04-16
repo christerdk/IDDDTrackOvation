@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using IDDD.SaaSOvation.IssueTrack.Domain.Model;
-using IDDD.SaaSOvation.IssueTrack.Domain.Model.Id;
 using IDDD.SaaSOvation.IssueTrack.Repository;
 
 namespace IDDD.SaaSOvation.IssueTrack.Application

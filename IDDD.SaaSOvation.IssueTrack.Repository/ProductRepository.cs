@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using IDDD.SaaSOvation.IssueTrack.Domain.Model;
-using IDDD.SaaSOvation.IssueTrack.Domain.Model.Id;
 
 namespace IDDD.SaaSOvation.IssueTrack.Repository
 {
@@ -12,7 +11,7 @@ namespace IDDD.SaaSOvation.IssueTrack.Repository
     {
         public Product Get(ProductId productId)
         {
-            return new Product(productId);
+            return new Product(productId, new TenantId(Guid.NewGuid()));
         }
     }
 }

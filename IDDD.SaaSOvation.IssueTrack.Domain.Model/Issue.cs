@@ -1,15 +1,17 @@
-﻿using IDDD.SaaSOvation.IssueTrack.Domain.Model.Id;
+﻿
 
 namespace IDDD.SaaSOvation.IssueTrack.Domain.Model
 {
     public class Issue
     {
-        public Issue(Observer observer, string Title, string Description, IssueType type, ProductId productId)
-        {
-            AddToProduct(productId);
-        }
+        public TenantId TenantId { get; set; }
 
-        public Issue(Observer observer, ProductId productId)
+        //public Issue(Observer observer, string Title, string Description, IssueType type, ProductId productId, TenantId tenantId)
+        //{
+        //    AddToProduct(productId);
+        //}
+
+        public Issue(Observer observer, ProductId productId, TenantId tenantId)
         {
             AddToProduct(productId);
         }
