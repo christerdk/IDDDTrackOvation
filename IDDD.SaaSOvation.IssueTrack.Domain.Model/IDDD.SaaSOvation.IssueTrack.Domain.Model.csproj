@@ -42,6 +42,7 @@
     <Compile Include="Assignee.cs" />
     <Compile Include="Events\IssueAssociatedWithBacklogItem.cs" />
     <Compile Include="IssueStatus.cs" />
+    <Compile Include="DistanceInMeters.cs" />
     <Compile Include="Tenant.cs" />
     <Compile Include="TenantId.cs" />
     <Compile Include="IssueId.cs" />
