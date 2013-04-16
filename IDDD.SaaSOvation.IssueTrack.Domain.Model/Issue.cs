@@ -1,5 +1,9 @@
 ﻿
 
+using System;
+using IDDD.SaaSOvation.IssueTrack.Common;
+using IDDD.SaaSOvation.IssueTrack.Domain.Model.Events;
+
 namespace IDDD.SaaSOvation.IssueTrack.Domain.Model
 {
     public class Issue
@@ -34,5 +38,16 @@ namespace IDDD.SaaSOvation.IssueTrack.Domain.Model
         {
             this.ProductId = productId;
         }
+
+        public void AssociateWithBacklogItem(Guid backlogItemId)
+        {
+            EventPublisher.Instance.Publish(new IssueAssociatedWithBacklogItem
+                {
+                 IssueId   = this.Id,
+                 BacklogItemId = backlogItemId
+                });
+        }
+
+
     }
 }

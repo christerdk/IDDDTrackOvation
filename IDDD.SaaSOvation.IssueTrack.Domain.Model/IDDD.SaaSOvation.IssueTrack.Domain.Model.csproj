@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assignee.cs" />
+    <Compile Include="Events\IssueAssociatedWithBacklogItem.cs" />
     <Compile Include="IssueStatus.cs" />
     <Compile Include="Tenant.cs" />
     <Compile Include="TenantId.cs" />
@@ -53,7 +54,12 @@
     <Compile Include="Version.cs" />
     <Compile Include="VersionId.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\IDDD.SaaSOvation.IssueTrack.Common\IDDD.SaaSOvation.IssueTrack.Common.csproj">
+      <Project>{47AD59AB-0B18-4DAE-BC3B-085AD3127E24}</Project>
+      <Name>IDDD.SaaSOvation.IssueTrack.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
