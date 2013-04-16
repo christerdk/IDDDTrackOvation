@@ -4,8 +4,11 @@ namespace IDDD.SaaSOvation.IssueTrack.Domain.Model
 {
     public class Issue
     {
-        public TenantId TenantId { get; set; }
-
+        public TenantId TenantId { get; protected set; }
+        public ProductId ProductId { get; protected set; }
+        public VersionId VersionId { get; protected set; }
+        public IssueId Id { get; protected set; }
+        public IssueStatus Status { get; protected set; }
         //public Issue(Observer observer, string Title, string Description, IssueType type, ProductId productId, TenantId tenantId)
         //{
         //    AddToProduct(productId);
@@ -19,7 +22,6 @@ namespace IDDD.SaaSOvation.IssueTrack.Domain.Model
         public Observer Observer { get; protected set; }
         public Assignee Assignee { get; protected set; }
         public IssueType Type { get; protected set; }
-        public ProductId ProductId { get; protected set; }
 
         public string Title { get; protected set; }
         public string Description { get; protected set; }
@@ -31,7 +33,6 @@ namespace IDDD.SaaSOvation.IssueTrack.Domain.Model
         protected void AddToProduct(ProductId productId)
         {
             this.ProductId = productId;
-            
         }
     }
 }
