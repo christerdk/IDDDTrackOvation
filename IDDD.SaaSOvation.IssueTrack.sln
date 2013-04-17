@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDDD.SaaSOvation.IssueTrack
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDDD.SaaSOvation.IssueTrack.UI", "IDDD.SaaSOvation.IssueTrack.UI\IDDD.SaaSOvation.IssueTrack.UI.csproj", "{69CF416E-3C57-4879-91DE-AD83F11038C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDDD.SaaSOvation.IssueTrack.Common", "..\IDDD.SaaSOvation.IssueTrack.Common\IDDD.SaaSOvation.IssueTrack.Common.csproj", "{47AD59AB-0B18-4DAE-BC3B-085AD3127E24}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDDD.SaaSOvation.IssueTrack.Common", "IDDD.SaaSOvation.IssueTrack.Common\IDDD.SaaSOvation.IssueTrack.Common.csproj", "{47AD59AB-0B18-4DAE-BC3B-085AD3127E24}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
